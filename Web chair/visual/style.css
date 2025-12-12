@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    background: #f7f7f7;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.brand {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.brand .bold {
+    font-weight: 900;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu a {
+    margin: 0 15px;
+    padding: 8px 28px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+/* TOP SECTION */
+.top {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.num-box {
+    background: #544a4a;
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 40px 0;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 250px;
+    background: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card .icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+.card p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* DESIGN SECTION */
+.design-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.big-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+}
+
+.small-text {
+    opacity: 0.5;
+}
+
+.pill-list {
+    margin-top: 40px;
+}
+
+.pill {
+    display: inline-block;
+    background: #000000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.dark {
+    background: #111;
+}
+
+/* POST SIDE */
+.post-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.post-card {
+    background: #000;
+    color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.post-card img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* GRID BUTTONS */
+.grid-buttons {
+    margin: 60px auto;
+    max-width: 800px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-buttons .pill {
+    text-align: center;
+    padding: 20px 0;
+}

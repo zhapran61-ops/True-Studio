@@ -1,0 +1,71 @@
+/* RESET DIKIT BIAR RAPIHAN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* SECTION JUDUL ATAS */
+.about-header {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+/* BAGIAN BIRU OUR MISSION */
+.blue {
+    background: #1e73be;
+    color: #fff;
+}
+
+.mission, .vision, .values {
+    padding: 60px 100px;
+}
+
+.mission h2,
+.vision h2,
+.values h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* TULISAN/CONTENT */
+.mission p,
+.vision p {
+    max-width: 650px;
+    font-weight: 300;
+}
+
+/* VALUES */
+.values ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.values li {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+/* BIKIN RAPI KALO LAYAR KECIL */
+@media (max-width: 768px) {
+    .mission, .vision, .values {
+        padding: 40px 20px;
+    }
+
+    .about-header h1 {
+        font-size: 36px;
+    }
+}

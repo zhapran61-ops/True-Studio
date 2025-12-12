@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #010100;
+    font-family: 'Inter', sans-serif;
+}
+
+/* WRAPPER */
+.join-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+    position: relative;
+}
+
+/* PS... */
+.ps-text {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* WE ARE HIRING TAG */
+.hiring-tag {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 2px solid #080502;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.hiring-tag::before,
+.hiring-tag::after {
+    content: "✦";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.hiring-tag::before {
+    left: -20px;
+}
+
+.hiring-tag::after {
+    right: -20px;
+}
+
+/* JOIN OUR TEAM */
+.big-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 200px;
+    line-height: 160px;
+    color: #0e0a06;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* IMAGE AREA */
+.join-image {
+    position: absolute;
+    right: 20px;
+    top: 260px;
+    width: 370px;
+    border: 5px solid #4a3826;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.join-image img {
+    width: 100%;
+    display: block;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    position: absolute;
+    right: 20px;
+    top: 720px;
+    width: 340px;
+    color: #f5f0eb;
+}
+
+.contact-box::before {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: #f5f0eb;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+}
