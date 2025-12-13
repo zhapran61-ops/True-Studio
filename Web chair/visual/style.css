@@ -171,3 +171,86 @@ body {
     text-align: center;
     padding: 20px 0;
 }
+
+@media (max-width: 1024px) {
+  /* tablet */
+}
+
+@media (max-width: 768px) {
+  /* hp */
+}
+
+@media (max-width: 480px) {
+  /* hp kecil */
+}
+
+@media (max-width: 1024px) {
+  .brand {
+    font-size: 48px;
+  }
+
+  .big-title {
+    font-size: 56px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .brand {
+    font-size: 40px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu a {
+    margin: 0;
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+
+  /* NUMBERS */
+  .numbers {
+    flex-wrap: wrap;
+  }
+
+  /* CARDS → STACK */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  /* TITLES */
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .big-title {
+    font-size: 48px;
+  }
+
+  /* POST */
+  .post-card {
+    width: 90%;
+  }
+
+  /* GRID BUTTONS */
+  .grid-buttons {
+    grid-template-columns: 1fr;
+  }
+}
