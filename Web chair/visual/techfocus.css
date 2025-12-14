@@ -1,0 +1,19 @@
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{ background:#ffffff; font-family: Arial, Helvetica, sans-serif; color:#c00000; }
+
+.poster{ position:relative; width:100%; min-height:100vh; padding:60px; }
+
+.title{ font-size:96px; font-weight:900; letter-spacing:4px; }
+
+.text{ max-width:420px; font-size:18px; line-height:1.6; }
+
+.text.left{ margin-top:80px; }
+
+.text.right{ position:absolute; right:60px; bottom:120px; }
+
+.lines::before, .lines::after{ content:""; position:absolute; background:#c00000; }
+
+.lines::before{ width:4px; height:300px; top:140px; left:300px; }
+
+.lines::after{ width:500px; height:4px; bottom:200px; right:60px; }

@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Anton&display=swap');
+
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
     margin: 0;
     background: #f7f7f7;
@@ -13,7 +21,7 @@ body {
 
 .brand {
     font-family: 'Anton', sans-serif;
-    font-size: 60px;
+    font-size: clamp(32px, 6vw, 60px);
     letter-spacing: 2px;
 }
 
@@ -23,10 +31,13 @@ body {
 
 .menu {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .menu a {
-    margin: 0 15px;
     padding: 8px 28px;
     background: #000;
     color: #fff;
@@ -49,6 +60,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .num-box {
@@ -62,7 +74,7 @@ body {
 
 .subtitle {
     margin: 40px 0;
-    font-size: 28px;
+    font-size: clamp(18px, 4vw, 28px);
     font-weight: 400;
     letter-spacing: 2px;
 }
@@ -73,11 +85,12 @@ body {
     justify-content: center;
     gap: 30px;
     padding: 40px 20px;
+    flex-wrap: wrap;
 }
 
 .card {
     width: 250px;
-    background: #fff;
+    background: #564a4a;
     border-radius: 25px;
     padding: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -108,11 +121,12 @@ body {
 .design-section {
     text-align: center;
     margin-top: 50px;
+    padding: 0 20px;
 }
 
 .big-title {
     font-family: 'Anton', sans-serif;
-    font-size: 70px;
+    font-size: clamp(36px, 8vw, 70px);
 }
 
 .small-text {
@@ -125,7 +139,7 @@ body {
 
 .pill {
     display: inline-block;
-    background: #000000;
+    background: #000;
     color: #fff;
     padding: 12px 35px;
     border-radius: 30px;
@@ -133,20 +147,17 @@ body {
     font-size: 14px;
 }
 
-.dark {
-    background: #111;
-}
-
 /* POST SIDE */
 .post-area {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin: 60px 0;
+    padding: 0 20px;
 }
 
 .post-card {
     background: #000;
-    color: #fff;
+    color: #795b5b;
     width: 300px;
     padding: 20px;
     border-radius: 30px;
@@ -165,6 +176,7 @@ body {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
 }
 
 .grid-buttons .pill {
@@ -172,85 +184,54 @@ body {
     padding: 20px 0;
 }
 
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+/* TABLET */
 @media (max-width: 1024px) {
-  /* tablet */
+    .card {
+        width: 220px;
+    }
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
-  /* hp */
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .post-card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .grid-buttons {
+        grid-template-columns: 1fr;
+    }
 }
 
+/* SMALL MOBILE */
 @media (max-width: 480px) {
-  /* hp kecil */
-}
 
-@media (max-width: 1024px) {
-  .brand {
-    font-size: 48px;
-  }
+    .menu a {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
 
-  .big-title {
-    font-size: 56px;
-  }
+    .pill {
+        padding: 10px 24px;
+        font-size: 13px;
+    }
 
-  .cards {
-    gap: 20px;
-  }
-}
-
-
-@media (max-width: 768px) {
-
-  /* HEADER */
-  .brand {
-    font-size: 40px;
-  }
-
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .menu a {
-    margin: 0;
-    padding: 8px 20px;
-    font-size: 13px;
-  }
-
-  /* NUMBERS */
-  .numbers {
-    flex-wrap: wrap;
-  }
-
-  /* CARDS → STACK */
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 320px;
-  }
-
-  /* TITLES */
-  .subtitle {
-    font-size: 20px;
-  }
-
-  .big-title {
-    font-size: 48px;
-  }
-
-  /* POST */
-  .post-card {
-    width: 90%;
-  }
-
-  /* GRID BUTTONS */
-  .grid-buttons {
-    grid-template-columns: 1fr;
-  }
+    .card p {
+        font-size: 13px;
+    }
 }
